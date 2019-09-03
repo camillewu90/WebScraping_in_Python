@@ -2,7 +2,7 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
-# Create the Spider ckass
+# Create the Spider class
 class Your_Spider(scrapy.Spider):
     name = "your_spider"
     # start_requests method
