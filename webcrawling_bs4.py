@@ -1,3 +1,5 @@
+## this is an example code for web crawling and 
+## scraping internal link on a webpage
 import requests
 import re
 from bs4 import BeautifulSoup
@@ -19,6 +21,7 @@ def getLinks(articleURL):
 # use Kevin Bacon link as an example
 links = getLinks('/wiki/Kevin_Bacon')
 
+# randomly get an article links on kevin bacon wiki page 
 while len(links) > 0:
     newArticle = links[random.randint(0,len(links)-1)].attrs['href']
     print(newArticle)
