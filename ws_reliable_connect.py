@@ -13,7 +13,7 @@ def getTitle(url):
         return None
     try:
         #pass the content of the page to a BeautifulSoup object
-        bsObj = BeautifulSoup(html,features="lxml") 
+        bsObj = BeautifulSoup(html,"lxml") 
         #get the title content of the h1 tag
         title = bsObj.body.h1
     #guard if the body tag does not exist
